@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background: rgb(57, 57, 57);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.199);
+  min-width: 600px;
+  max-width: 1000px;
+  height: 70vh;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.field-area {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  background: crimson;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 50%;
+}
+
+button:hover {
+  scale: 0.96;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.596);
+}
+
+/* hoşgeldin alanı */
+.container h2 {
+  font-family: 'Satisfy';
+  font-size: 34px;
+}
+.container h2 input {
+  font-family: 'Satisfy';
+  border: none;
+  outline: none;
+  font-size: 30px;
+}
+
+/* Liste */
+ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  /* elemanlar taşarsa scroll'U aktif eder */
+  overflow: auto;
+}
+
+ul::-webkit-scrollbar {
+  background: white;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+ul li h3:nth-child(2) {
+  color: green;
+}
+
+ul li button {
+  width: 100px;
+}
